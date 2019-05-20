@@ -291,11 +291,58 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/vue/" title="vue: 0">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="vue" style="background-color: #F9EBEA;">vue
+                        <span class="tag-length">0</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/vue-git/" title="vue git: 0">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="vue git" style="background-color: #F5EEF8;">vue git
+                        <span class="tag-length">0</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/git/" title="git: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="git" style="background-color: #D5F5E3;">git
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
 
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"vue","weight":0,"link":"https://xiongyoo.github.io/tags/vue/"},{"text":"vue git","weight":0,"link":"https://xiongyoo.github.io/tags/vue-git/"},{"text":"git","weight":1,"link":"https://xiongyoo.github.io/tags/git/"}], {
+        autoResize: true
+    });
+</script>
     
 
 </main>
